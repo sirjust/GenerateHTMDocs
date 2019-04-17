@@ -12,8 +12,9 @@ namespace GenerateHTMDocs
         static void Main(string[] args)
         {
             Console.WriteLine("This program will take in a simple HTM document and create\nfollow-on documents to facilitate course creation for AnytimeCE.");
-            Document mainDocument = new Document { path = @"../../../Files/Page2.htm", fileName = "Page2", fileNumber = 2 };
-            mainDocument.ExtractFile(mainDocument.path);
+            Document readDocument = new Document { path = @"../../../Files/Page2.htm", fileName = "Page2", fileNumber = 2 };
+            readDocument.lines = readDocument.ExtractFile(readDocument.path);
+            var newFile = new GenerateFile(readDocument);
             Console.ReadLine();
         }
     }

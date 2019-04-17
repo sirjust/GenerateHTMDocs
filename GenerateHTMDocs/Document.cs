@@ -19,7 +19,12 @@ namespace GenerateHTMDocs
             // foreach line of text, add it to the file lines
             // do this only for the second file
             string[] lines = File.ReadAllLines(path);
-            return new List<string>();
+            var returnLines = new List<string>();
+            foreach(string line in lines)
+            {
+                returnLines.Add(line);
+            }
+            return returnLines;
         }
 
     }
