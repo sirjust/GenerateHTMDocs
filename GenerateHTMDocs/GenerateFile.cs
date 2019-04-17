@@ -9,7 +9,7 @@ namespace GenerateHTMDocs
 {
     class GenerateFile
     {
-        public GenerateFile(Document baseFile)
+        public Document MakeFile(Document baseFile)
         {
             Document newPage = new Document();
             newPage.fileNumber = baseFile.fileNumber + 1;
@@ -21,7 +21,7 @@ namespace GenerateHTMDocs
                 newPage.lines.Add(line);
             }
             // change image reference
-            newPage.lines[8] = newPage.lines[8].Substring(0,37) + "3" + newPage.lines[8].Substring(38);
+            newPage.lines[8] = newPage.lines[8].Substring(0,37) + newPage.fileNumber + newPage.lines[8].Substring(38);
 
             //change forward and backward links
             newPage.lines[10] = newPage.lines[10].Remove(newPage.lines[10].Length - 7) + (newPage.fileNumber - 1) + ".htm" + '\u0022' +">";
@@ -33,6 +33,7 @@ namespace GenerateHTMDocs
                 sw.WriteLine(newPage.lines[i]);
             }
             sw.Close();
+            return newPage;
         }
     }
 }
