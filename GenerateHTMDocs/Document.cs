@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GenerateHTMDocs
 {
-    class Document
+    public class Document
     {
         public string path { get; set; }
         public string fileName { get; set; }
