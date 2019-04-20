@@ -19,7 +19,7 @@ namespace GenerateHTMDocs
                 Console.WriteLine("Please type a positive number.");
                 // note: the program won't work correctly if the user types a number larger than 999
             }
-            Document readDocument = new Document { path = @"../../../Files/Page2.htm", fileName = "Page2", fileNumber = 2 };
+            Document readDocument = new Document { path = @"../../../Files/W2017_NEC_440_ACREF_EQ_SC-p2.htm", fileName = "W2017_NEC_440_ACREF_EQ_SC-p2.htm", fileNumber = 2 };
             readDocument.lines = readDocument.ExtractFile(readDocument.path);
             var brokenLines = Helper.splitLines(readDocument);
             int counter = 2;

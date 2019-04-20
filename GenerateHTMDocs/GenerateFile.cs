@@ -13,16 +13,16 @@ namespace GenerateHTMDocs
         {
             Document newPage = new Document();
             newPage.fileNumber = baseFile.fileNumber + 1;
-            newPage.fileName = "Page" + newPage.fileNumber;
+            newPage.fileName = "W2017_NEC_440_ACREF_EQ_SC-p" + newPage.fileNumber;
             switch (newPage.fileNumber)
             {
                 // here I can insert the new fileNumber into the path
                 case var num when (newPage.fileNumber <10): newPage.path = baseFile.path.Remove(baseFile.path.Length - 5) + newPage.fileNumber + ".htm";
                     break;
-                case var num when (newPage.fileNumber >= 10 && newPage.fileNumber< 100):
+                case var num when (newPage.fileNumber > 10 && newPage.fileNumber<= 100):
                     newPage.path = baseFile.path.Remove(baseFile.path.Length - 6) + newPage.fileNumber + ".htm";
                     break;
-                case var num when (newPage.fileNumber >= 100):
+                case var num when (newPage.fileNumber > 100):
                     newPage.path = baseFile.path.Remove(baseFile.path.Length - 7) + newPage.fileNumber + ".htm";
                     break;
                 default: newPage.path = baseFile.path.Remove(baseFile.path.Length - 5) + newPage.fileNumber + ".htm";
