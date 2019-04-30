@@ -9,11 +9,11 @@ namespace GenerateHTMDocs
 {
     class GenerateFile
     {
-        public Document MakeFile(Document baseFile, List<string[]> brokenLines)
+        public Document MakeFile(Document baseFile, List<string[]> brokenLines, string courseName)
         {
             Document newPage = new Document();
             newPage.fileNumber = baseFile.fileNumber + 1;
-            newPage.fileName = "W2017_NEC_440_ACREF_EQ_SC-p" + newPage.fileNumber;
+            newPage.fileName = $"{courseName}p" + newPage.fileNumber;
             switch (newPage.fileNumber)
             {
                 // here I can insert the new fileNumber into the path
