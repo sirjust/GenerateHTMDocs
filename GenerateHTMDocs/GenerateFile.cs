@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GenerateHTMDocs
 {
-    class GenerateFile
+    public class GenerateFile
     {
         public Document MakeFile(Document baseFile, List<string[]> brokenLines, string courseName)
         {

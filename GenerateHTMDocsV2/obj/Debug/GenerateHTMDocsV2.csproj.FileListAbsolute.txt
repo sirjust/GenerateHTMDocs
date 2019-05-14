@@ -1,0 +1,11 @@
+C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocsV2\bin\Debug\GenerateHTMDocsV2.exe.config
+C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocsV2\bin\Debug\GenerateHTMDocsV2.exe
+C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocsV2\bin\Debug\GenerateHTMDocsV2.pdb
+C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocsV2\bin\Debug\GenerateHTMDocs.exe
+C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocsV2\bin\Debug\GenerateHTMDocs.pdb
+C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocsV2\bin\Debug\GenerateHTMDocs.exe.config
+C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocsV2\obj\Debug\GenerateHTMDocsV2.csprojAssemblyReference.cache
+C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocsV2\obj\Debug\GenerateHTMDocsV2.csproj.CoreCompileInputs.cache
+C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocsV2\obj\Debug\GenerateHTMDocsV2.csproj.CopyComplete
+C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocsV2\obj\Debug\GenerateHTMDocsV2.exe
+C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocsV2\obj\Debug\GenerateHTMDocsV2.pdb
