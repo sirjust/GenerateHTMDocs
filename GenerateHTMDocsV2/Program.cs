@@ -24,9 +24,10 @@ namespace GenerateHTMDocsV2
 
             int counter = 2;
             Document readDocument = new Document { fileName = $"{courseName}p{counter}.htm", path = $"..//..//..//Files//{courseName}p{counter}.htm", fileNumber = counter, lines = TextRepository.BaseLines };
-            readDocument.lines[8] += courseName + ".jpg\" border = \"0\" usemap = \"#Map\" >";
-            readDocument.lines[10] += $"{courseName}p{counter-1}.htm\">";
-            readDocument.lines[11] += $"{courseName}p{counter+1}.htm\">";
+            readDocument.lines[8] += $"{courseName}p{counter}.jpg\" border = \"0\" usemap = \"#Map\" >";
+            readDocument.lines[10] += $"{courseName}p{counter - 1}.htm\">";
+            readDocument.lines[11] += $"{courseName}p{counter + 1}.htm\">";
+            GeneratePagesOneAndTwo.GeneratePage(readDocument);
             var brokenLines = Helper.splitLines(readDocument, courseName);
             while (counter < totalNumber)
             {
@@ -36,6 +37,8 @@ namespace GenerateHTMDocsV2
                 readDocument = newFile;
                 counter++;
             }
+            Document pageOne = GeneratePagesOneAndTwo.MakePageOne(courseName);
+            GeneratePagesOneAndTwo.GeneratePage(pageOne);
             Console.WriteLine("The program has completed. Please verify your files.");
             Console.ReadLine();
         }
