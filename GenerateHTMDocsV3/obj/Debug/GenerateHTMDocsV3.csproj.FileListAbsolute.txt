@@ -1,0 +1,7 @@
+C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocsV3\bin\Debug\GenerateHTMDocsV3.exe.config
+C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocsV3\bin\Debug\GenerateHTMDocsV3.exe
+C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocsV3\bin\Debug\GenerateHTMDocsV3.pdb
+C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocsV3\obj\Debug\GenerateHTMDocsV3.csprojAssemblyReference.cache
+C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocsV3\obj\Debug\GenerateHTMDocsV3.csproj.CoreCompileInputs.cache
+C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocsV3\obj\Debug\GenerateHTMDocsV3.exe
+C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocsV3\obj\Debug\GenerateHTMDocsV3.pdb
