@@ -15,6 +15,8 @@ namespace GenerateHTMDocsV2
             uint totalNumber;
             Console.WriteLine("What is the Course Name?");
             string courseName = Console.ReadLine();
+            Console.WriteLine("What should the Course Title be?");
+            string courseTitle = Console.ReadLine();
             Console.WriteLine("How many documents would you like? (Must be below 1000)");
             while (!uint.TryParse(Console.ReadLine(), out totalNumber))
             {
@@ -23,10 +25,11 @@ namespace GenerateHTMDocsV2
             }
 
             int counter = 2;
-            Document readDocument = new Document { fileName = $"{courseName}p{counter}.htm", path = $"..//..//..//Files//{courseName}p{counter}.htm", fileNumber = counter, lines = TextRepository.BaseLines };
-            readDocument.lines[8] += $"{courseName}p{counter}.jpg\" border = \"0\" usemap = \"#Map\" >";
-            readDocument.lines[10] += $"{courseName}p{counter - 1}.htm\">";
-            readDocument.lines[11] += $"{courseName}p{counter + 1}.htm\">";
+            Document readDocument = new Document { fileName = $"{courseName}-p{counter}.htm", path = $"..//..//..//Files//{courseName}-p{counter}.htm", fileNumber = counter, lines = TextRepository.BaseLines };
+            readDocument.lines[3] += $"{courseTitle}</title>";
+            readDocument.lines[8] += $"{courseName}-p{counter}.jpg\" border = \"0\" usemap = \"#Map\" >";
+            readDocument.lines[10] += $"{courseName}-p{counter - 1}.htm\">";
+            readDocument.lines[11] += $"{courseName}-p{counter + 1}.htm\">";
             GeneratePagesOneAndTwo.GeneratePage(readDocument);
             var brokenLines = Helper.splitLines(readDocument, courseName);
             while (counter < totalNumber)

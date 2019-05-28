@@ -13,6 +13,7 @@ namespace GenerateHTMDocs
         public string fileName { get; set; }
         public int fileNumber { get; set; }
         public List<string> lines { get; set; }
+        public string title { get; set; }
 
         public List<string> ExtractFile(string path)
         {

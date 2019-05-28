@@ -10,7 +10,7 @@ namespace GenerateHTMDocs
     {
         static public List<string[]> splitLines(Document readFile, string courseName)
         {
-            var locationOfNumber = courseName.Length +11;
+            var locationOfNumber = courseName.Length +12;
             var lineTenDifference = 42;
             // I split each line into an array of three strings; this way I could insert a higher value into the middle of it (ie 10 and up)
             var lineEightSplit = new string[] { readFile.lines[8].Substring(0, locationOfNumber), readFile.fileNumber.ToString(), readFile.lines[8].Substring(locationOfNumber + 1) };

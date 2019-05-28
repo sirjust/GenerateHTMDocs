@@ -13,7 +13,7 @@ namespace GenerateHTMDocs
         {
             Document newPage = new Document();
             newPage.fileNumber = baseFile.fileNumber + 1;
-            newPage.fileName = $"{courseName}p" + newPage.fileNumber;
+            newPage.fileName = $"{courseName}p-" + newPage.fileNumber;
             switch (newPage.fileNumber)
             {
                 // here I can insert the new fileNumber into the path
@@ -39,7 +39,7 @@ namespace GenerateHTMDocs
 
             // change forward and backward links
             newPage.lines[10] = brokenLines[1][0] + (newPage.fileNumber -1) + brokenLines[1][2];
-            newPage.lines[11] = brokenLines[1][0] + (newPage.fileNumber +1) + brokenLines[1][2];
+            newPage.lines[11] = brokenLines[2][0] + (newPage.fileNumber +1) + brokenLines[1][2];
 
             StreamWriter sw = new StreamWriter(newPage.path);
             for(int i = 0; i< newPage.lines.Count; i++)
