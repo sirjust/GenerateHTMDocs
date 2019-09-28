@@ -1,7 +1,0 @@
-C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocs\bin\Debug\GenerateHTMDocs.exe.config
-C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocs\bin\Debug\GenerateHTMDocs.exe
-C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocs\bin\Debug\GenerateHTMDocs.pdb
-C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocs\obj\Debug\GenerateHTMDocs.csprojAssemblyReference.cache
-C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocs\obj\Debug\GenerateHTMDocs.csproj.CoreCompileInputs.cache
-C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocs\obj\Debug\GenerateHTMDocs.exe
-C:\Users\SirJUST\source\repos\GenerateHTMDocs\GenerateHTMDocs\obj\Debug\GenerateHTMDocs.pdb

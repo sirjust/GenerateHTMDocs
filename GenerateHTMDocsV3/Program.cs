@@ -33,7 +33,7 @@ namespace GenerateHTMDocsV3
                 Document.GeneratePage(htmPage);
                 counter++;
             }
-            Document pageOne = GeneratePagesOneAndTwo.MakePageOne(courseName);
+            Document pageOne = GeneratePagesOneAndTwo.MakePageOne(courseName, courseTitle);
             Document.GeneratePage(pageOne);
             Console.WriteLine("The program has completed. Please verify your files.");
             Console.ReadLine();
